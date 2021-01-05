@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarSize="25sp"
+    android:padding="16sp"
+    tools:context=".EditActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        tools:context=".EditActivity">
+
+        <ImageView
+            android:id="@+id/profilepicture"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:src="@drawable/pp1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_margin="10sp"
+            android:id="@+id/ed1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_margin="10sp"
+                android:background="@drawable/custombutton"
+                android:inputType="textPersonName"
+                android:text="Name"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="203dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginacc"
+            android:layout_margin="10sp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custombutton"
+                android:ems="10"
+                android:layout_margin="10sp"
+                android:layout_marginTop="25dp"
+                android:inputType="textPersonName"
+                android:text="Gmail"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="275dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginacc"
+            android:layout_margin="10sp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPersonName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custombutton"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Mobile Number"
+                android:layout_marginTop="25dp"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="356dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="40dp"
+            android:id="@+id/save"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custombutton"
+            android:fontFamily="@font/albam"
+            android:maxLines="1"
+            android:text="Save" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "748903207148",
+    "project_id": "kartm-79894",
+    "storage_bucket": "kartm-79894.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748903207148:android:54f76d26e5fa398c7315c9",
+        "android_client_info": {
+          "package_name": "com.example.kartm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748903207148-7b19ve9e9lr89jls83bhuk4r0rjsg6ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABpxiPBjbmurJm8b9MLMiZ0-_2xCf6PrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748903207148-7b19ve9e9lr89jls83bhuk4r0rjsg6ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

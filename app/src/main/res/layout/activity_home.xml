@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarSize="10sp"
+    android:padding="10sp"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        android:scrollbarSize="15sp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/searchlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/txtsearchProduct"
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search Item" />
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:id="@+id/Homesettings"
+                android:background="@color/white"
+                android:src="@drawable/settingsmenu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seedslayout"
+            android:layout_width="374dp"
+            android:layout_height="167dp"
+            android:layout_below="@+id/searchlayout"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:src="@drawable/seeds1" />
+
+            <TextView
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/titilliumblack"
+                android:gravity="center"
+                android:text="Seeds"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/machinerylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seedslayout"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/titilliumblack"
+                android:gravity="center"
+                android:text="Machinery"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/machinery" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/organiclayout"
+            android:layout_width="374dp"
+            android:layout_height="167dp"
+            android:layout_below="@+id/machinerylayout"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:src="@drawable/organiclayout" />
+
+            <TextView
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/titilliumblack"
+                android:gravity="center_horizontal"
+                android:text="Organic Fertilizers"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/farmingguidence"
+            android:layout_width="374dp"
+            android:layout_height="167dp"
+            android:layout_below="@+id/organiclayout"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:src="@drawable/youtube1" />
+
+            <TextView
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/titilliumblack"
+                android:gravity="center_horizontal"
+                android:text="Farming Guidence"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/farmingguidence"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".HomeActivity">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:layout_margin="40dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/albam"
+                android:maxLines="1"
+                android:background="@drawable/custombutton"
+                android:onClick="logout"
+                android:text="Logout" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
