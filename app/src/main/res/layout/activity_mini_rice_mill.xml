@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarSize="8dp"
+    android:padding="8sp"
+    tools:context=".RiceHarvestMachineActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative1"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:fontFamily="@font/titilliumsemibold"
+            android:text="Mini Rice Mill"
+
+            android:textColor="@color/teal_700"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="245dp"
+            android:layout_height="212dp"
+            android:layout_below="@+id/ct"
+            android:layout_marginTop="36dp"
+            android:id="@+id/ctimage"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/miniricemill" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl"
+            android:layout_below="@+id/ctimage">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:rowCount="6"
+                android:columnCount="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capacity "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :150 kg Per Hour"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operation Mode "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :Automatic"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electricity Connection"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Single Phase"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motor Power"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :3 HP"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Material of Construction"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :MS"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :2 Kwh"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voltage"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :220 V"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frequency"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :50 Hz"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motor Speed"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :2800 Rpm"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COST"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 28,000"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+            </GridLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gl"
+            android:text="Buy"
+            android:id="@+id/addtocart1"
+            android:layout_margin="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circlebutton"
+            android:fontFamily="@font/albam"/>
+    </RelativeLayout>
+</ScrollView>

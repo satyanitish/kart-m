@@ -1,0 +1,257 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarSize="8dp"
+    android:padding="8sp"
+    tools:context=".CompactTractorActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative1"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titilliumsemibold"
+            android:text="Compact Tractor"
+            android:textColor="@color/teal_700"
+            android:layout_marginLeft="80dp"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="245dp"
+            android:layout_height="212dp"
+            android:layout_below="@+id/ct"
+            android:layout_marginTop="36dp"
+            android:id="@+id/ctimage"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/compactttractor" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl"
+            android:layout_below="@+id/ctimage">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:rowCount="6"
+                android:columnCount="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engine Power  "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :75 HP "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brand  "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Massey Ferguson"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model Name/Number"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 2635"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lifting Capacity"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :Max 2145 kgf"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cubic Capacity"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :3600 cc"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clutch Type"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :Split torque clutch"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTO Type"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :Independent PTO"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number Of Cylinders"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :4"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTO Speed"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :540 rpm @1789 rpm"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brake Type"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :Wet multi disc"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steering Type"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :Power steering"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ground Clearance"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :320 mm"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wheel Base"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :2245 mm"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COST"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 8.5 Lakh"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+            </GridLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gl"
+            android:text="Buy"
+            android:id="@+id/addtocart1"
+            android:layout_margin="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circlebutton"
+            android:fontFamily="@font/albam"/>
+    </RelativeLayout>
+</ScrollView>

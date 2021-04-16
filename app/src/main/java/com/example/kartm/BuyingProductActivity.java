@@ -9,9 +9,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -21,7 +25,8 @@ import java.util.Map;
 public class BuyingProductActivity extends AppCompatActivity {
 
     EditText txtname,txtmobile,txtaddress,txtpincode,txtstate;
-    Button buy;
+    TextView pname,tcosts;
+    Button save,Buy;
     FirebaseAuth fAuth;
     FirebaseFirestore fstore;
     String userId;
@@ -33,10 +38,16 @@ public class BuyingProductActivity extends AppCompatActivity {
         txtname=findViewById(R.id.name);
         txtpincode=findViewById(R.id.pincode);
         txtstate=findViewById(R.id.state);
-        buy=findViewById(R.id.buy);
+        pname=findViewById(R.id.pname);
+        tcosts=findViewById(R.id.tcosts);
+        save=findViewById(R.id.buy);
         fAuth=FirebaseAuth.getInstance();
         fstore=FirebaseFirestore.getInstance();
-        buy.setOnClickListener(new View.OnClickListener() {
+        pname.setText(getIntent().getStringExtra("wheat"));
+        tcosts.setText(getIntent().getStringExtra("cost"));
+        String pn=pname.getText().toString();
+        String cc=tcosts.getText().toString();
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String Bname=txtname.getText().toString();
@@ -77,11 +88,16 @@ public class BuyingProductActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(Void aVoid) {
                             Log.d("TAG", "onSuccess: Billing Address Inserted "+userId);
+                            Toast.makeText(getApplicationContext(),"Success",Toast.LENGTH_SHORT).show();
+                            Intent intent=new Intent(BuyingProductActivity.this,ConfimationOrderActivity.class);
+                            intent.putExtra("wheat",pn);
+                            intent.putExtra("cost",cc);
+                            startActivity(intent);
                         }
                     });
-                    startActivity(new Intent(getApplicationContext(),ConfimationOrderActivity.class));
                 }
             }
         });
+
     }
 }

@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarSize="8dp"
+    android:padding="8sp"
+    tools:context=".BrassActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative1"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titilliumsemibold"
+            android:text="4 Stroke Power Sprayer"
+            android:textColor="@color/teal_700"
+            android:layout_marginLeft="50dp"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="245dp"
+            android:layout_height="212dp"
+            android:layout_below="@+id/ct"
+            android:layout_marginTop="36dp"
+            android:id="@+id/ctimage"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/brassred" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl"
+            android:layout_below="@+id/ctimage">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:rowCount="6"
+                android:layout_marginLeft="35dp"
+                android:columnCount="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brand  "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Rolyspray"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model Name/Number "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : R-809"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usage/Application"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Agriculture"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pump Type"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Brass"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engine Type"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 4 Stroke"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power Source"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Petrol"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capacity"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 20 liters"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working Pressure"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Pressure Pump"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COST"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 9,400"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+            </GridLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gl"
+            android:text="Buy"
+            android:id="@+id/addtocart1"
+            android:layout_margin="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circlebutton"
+            android:fontFamily="@font/albam"/>
+    </RelativeLayout>
+</ScrollView>

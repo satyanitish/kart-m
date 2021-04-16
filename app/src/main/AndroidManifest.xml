@@ -3,6 +3,7 @@
     package="com.example.kartm">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KartM">
-        <activity android:name=".ConfimationOrderActivity"></activity>
+        <activity android:name=".addSeedActivity"></activity>
+        <activity android:name=".SellersActivity" />
+        <activity android:name=".PseudomonasfluorescensActivity" />
+        <activity android:name=".VamBioPromotorActivity" />
+        <activity android:name=".PotashMobilizingBacteriaActivity" />
+        <activity android:name=".RhizoPowerActivity" />
+        <activity android:name=".AzotobacterActivity" />
+        <activity android:name=".PhosphoPowerActivity" />
+        <activity android:name=".OrganicFertilizerActivity" />
+        <activity android:name=".CottonCrusherActivity" />
+        <activity android:name=".BrassActivity" />
+        <activity android:name=".MobileRiceMillActivity" />
+        <activity android:name=".MiniRiceMillActivity" />
+        <activity android:name=".BrushHarvestMachineActivity" />
+        <activity android:name=".RiceHarvestMachineActivity" />
+        <activity android:name=".CompactTractorActivity" />
+        <activity android:name=".MachineLayoutActivity" />
+        <activity android:name=".CottonActivity" />
+        <activity android:name=".CastorActivity" />
+        <activity android:name=".MustardActivity" />
+        <activity android:name=".RapeseedActivity" />
+        <activity android:name=".FarmingvideoActivity" />
+        <activity android:name=".GroundnutActivity" />
+        <activity android:name=".OrdersListActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ConfimationOrderActivity" />
         <activity android:name=".RiceActivity" />
         <activity android:name=".BuyingProductActivity" />
         <activity android:name=".Wheat" />
@@ -22,7 +48,9 @@
         <activity android:name=".SeedsLayout" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".RegisterActivity">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,6 +58,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_wToWvJUfN4Tu3e" />
     </application>
 
 </manifest>

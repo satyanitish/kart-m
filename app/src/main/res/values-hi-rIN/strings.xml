@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KartMe</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="newsfeed">समाचार </string>
+
+    //
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="seeds">बीज</string>
+    <string name="machinery">मशीनरी</string>
+    <string name="organicfertilizer">जैविक खाद</string>
+    <string name="farmingvideos">खेती के वीडियो</string>
+
+    <string name="cost">लागत :</string>
+    <string name="description">विवरण:</string>
+    <string name="varietyofseeds">बीज की विविधता :</string>
+    <string name="turnoverperacer">प्रति एकड़ में पलट दें :</string>
+    <string name="typeofsoiltogrow">बढ़ने के लिए मिट्टी का प्रकार :</string>
+    <string name="tempregion">तापमान - क्षेत्र :</string>
+    <string name="organicfertilzerrequired">जैविक उर्वरक आवश्यक:</string>
+    <string name="descvalues">गेहूं के आटे में पैक विटामिन और खनिज त्वचा की लोच में सुधार करते हैं और झुर्रियों को कम करते हैं। गेहूं में समृद्ध फाइबर सामग्री पाचन में सुधार करती है और शरीर से हानिकारक विषाक्त पदार्थों को निकालती है। इस जन्मजात घटक की एंटीऑक्सीडेंट क्षमता आपकी त्वचा को हानिकारक यूवी किरणों और कैंसर पैदा करने वाले एजेंटों से बचाती है। </string>
+    <string name="vosvalues">भारत में उगाई जाने वाली गेहूँ की मुख्य किस्में VL-832, VL-804, HS-365, HS-240, HD2687, WH-147, WH-542, PBW-343, WH-896 (d), PDW 233 (d), UP-2338, PBW-502, श्रेष्ठ (HD 2687), आदित्य (HD 2781), HW-2044, HW-1085, NP-200 (di), HW-741.</string>
+    <string name="turnovervalues">25 से 30 क्विंटल </string>
+    <string name="typesoilvalues">काली मिट्टी</string>
+    <string name="turnacer">भारत में प्रमुख गेहूं उत्पादक राज्य उत्तर प्रदेश, पंजाब, हरियाणा, मध्य प्रदेश, राजस्थान, बिहार और गुजरात हैं। (23`C से 13`)</string>
+    <string name="organicferti">मिट्टी का पीएच 6.0 से 7.0 तक होता है, फिर यह बढ़ते हुए गेहूं के लिए अच्छा होता है। मिट्टी की सफाई भी आवश्यक है। आप मिट्टी को अज़ातोबेक्टर (2.5 किलोग्राम), फोपेटिका संस्कृति (2.5 किलोग्राम) टायकोडर्मा पाउडर (2.5 किलोग्राम) के साथ इलाज कर सकते हैं। फार्म यार्ड खाद के 125 किलोग्राम के साथ इन सभी सामग्रियों को मिलाएं। आप इसे जुताई के अंतिम समय में लगा सकते हैं।</string>
+
+</resources>

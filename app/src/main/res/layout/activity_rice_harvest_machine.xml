@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarSize="8dp"
+    android:padding="8sp"
+    tools:context=".RiceHarvestMachineActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative1"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/titilliumsemibold"
+            android:text="Rice Harvest Machine"
+            android:textColor="@color/teal_700"
+            android:layout_marginLeft="60dp"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="245dp"
+            android:layout_height="212dp"
+            android:layout_below="@+id/ct"
+            android:layout_marginTop="36dp"
+            android:id="@+id/ctimage"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/ricedaalharvest" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl"
+            android:layout_below="@+id/ctimage">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:rowCount="6"
+                android:columnCount="2"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usage/Application  "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :Agriculture"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crops "
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : Multi crop"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 70 HP"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cutting Capacity"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :1000MM/hrs"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Straw Walker"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :5"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cutter Bar Width"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :14 Feet"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oil Consumption(Kg/Mu)"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" :1.0(1mu=667 M2)"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COST"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : 19.5 Lakh"
+                    android:fontFamily="@font/titilliumsemibold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+            </GridLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gl"
+            android:text="Buy"
+            android:id="@+id/addtocart1"
+            android:layout_margin="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circlebutton"
+            android:fontFamily="@font/albam"/>
+    </RelativeLayout>
+</ScrollView>

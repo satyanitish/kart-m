@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:scrollbars="vertical"
-    android:scrollbarSize="12dp"
-    android:padding="10sp"
+    android:scrollbarSize="5dp"
+    android:padding="7sp"
     tools:context=".Wheat">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 android:layout_marginLeft="55dp"
                 android:fontFamily="@font/titilliumsemibold"
                 android:text="Wheat"
-                android:textColor="@color/black"
+                android:textColor="@color/teal_700"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
@@ -60,7 +60,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$ 299"
+                android:text="$ 299/kg"
+                android:id="@+id/cost"
                 android:textSize="20dp"
                 android:textColor="@color/black"
                 />
@@ -73,9 +74,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="Description : "
-                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:text="@string/description"
+                android:textColor="@color/teal_700"
                 android:textStyle="bold"
                 android:id="@+id/dep"
                 android:layout_margin="3dp"
@@ -84,17 +85,155 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
+                android:text="@string/descvalues"
                 android:layout_below="@+id/dep"
                 android:id="@+id/descp"
+                android:paddingRight="@dimen/activity_vertical_margin"
                 android:textColor="@color/black"
                 android:layout_margin="3dp"
                 />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/descp"
+                android:layout_margin="3dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/vos">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voseed"
+                    android:textSize="17sp"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:text="@string/varietyofseeds"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voseed1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="3dp"
+                    android:layout_below="@+id/voseed"
+                    android:text="@string/vosvalues"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/turnover"
+                android:layout_below="@+id/vos"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turnoverperacer"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:id="@+id/turnn"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/turnover1"
+                    android:layout_below="@+id/turnn"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="@string/turnovervalues"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Typesoil"
+                android:layout_below="@+id/turnover"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/typeofsoiltogrow"
+                    android:textColor="@color/teal_700"
+                    android:id="@+id/tsoil"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/Typesoil1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tsoil"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:text="@string/typesoilvalues"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Temp"
+                android:layout_below="@+id/Typesoil"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tempregion"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:id="@+id/tr"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/temp1"
+                    android:layout_below="@+id/tr"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:textSize="16sp"
+                    android:text="@string/turnacer"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/organicF"
+                android:layout_below="@+id/Temp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_margin="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organicfertilzerrequired"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:id="@+id/of"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/organic1"
+                    android:layout_below="@+id/of"
+                    android:layout_margin="6dp"
+                    android:textSize="16sp"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:textColor="@color/black"
+                    android:text="@string/organicferti"/>
+            </RelativeLayout>
+
 
             <LinearLayout
                 android:id="@+id/indec"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/descp"
+                android:layout_below="@id/organicF"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="110dp"
                 android:gravity="center"
@@ -111,7 +250,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0"
+                    android:text="1"
                     android:id="@+id/count"
                     android:textColor="@color/black"
                     android:textSize="25dp"
@@ -126,9 +265,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/increment" />
-
             </LinearLayout>
-
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -138,9 +275,8 @@
                 android:layout_margin="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/circlebutton"
+                android:background="@drawable/custombutton"
                 android:fontFamily="@font/albam"/>
         </RelativeLayout>
     </RelativeLayout>
-
 </ScrollView>

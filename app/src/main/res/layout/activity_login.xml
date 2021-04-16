@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:scrollbars="vertical"
-    android:scrollbarSize="25sp"
-    android:padding="16sp"
-    tools:context=".RegisterActivity">
+    android:background="@drawable/pattern"
+    android:scrollbarSize="8sp"
+    android:padding="8sp"
+    tools:context=".LoginActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,9 +19,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/hangedletters"
-            android:text="KartMe"
-            android:textColor="@color/black"
+            android:fontFamily="@font/albas"
+            android:text="Kissan Mart"
+            android:textColor="#0BB9EF"
             android:textSize="50sp"
             android:textStyle="bold" />
         <TextView
@@ -30,9 +31,10 @@
             android:text="Login Here . . ."
             android:layout_below="@+id/textView"
             android:layout_marginTop="50dp"
-            android:textColor="@color/black"
+            android:textColor="#EA1BE6"
             android:textSize="20sp"
             android:fontFamily="@font/albas" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,6 +46,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="13"
+                android:fontFamily="@font/albam"
+                android:textColorHint="#123"
+                android:background="@drawable/border"
                 android:hint="Enter Email"
                 android:inputType="textEmailAddress"
                 android:layout_marginTop="15dp"
@@ -60,6 +65,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="13"
+                android:background="@drawable/border"
+                android:fontFamily="@font/albam"
+                android:textColorHint="#123"
                 android:inputType="textPassword"
                 android:hint="Enter Password"
                 android:layout_marginTop="15dp"
@@ -67,13 +75,14 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/login"
-            android:layout_width="250dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ed2"
+            app:cornerRadius="20dp"
             android:layout_marginTop="25dp"
-            android:background="@drawable/custombutton"
+            android:backgroundTint="#0D8BEF"
             android:layout_marginBottom="40dp"
             android:fontFamily="@font/albam"
             android:text="Login" />
@@ -90,12 +99,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/createText"
             app:layout_constraintVertical_bias="0.39" />
-
         <TextView
             android:layout_marginTop="15dp"
             android:id="@+id/newuser"
             android:layout_width="wrap_content"
             android:layout_height="31dp"
+            android:fontFamily="@font/ubuntutitle"
             android:layout_below="@+id/progressBar"
             android:text="Create Account? Click Here !"
             android:textSize="13sp"
@@ -105,6 +114,7 @@
             android:layout_width="wrap_content"
             android:layout_below="@+id/newuser"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntutitle"
             android:text="Forgot Password? Click Here !"
             android:textSize="13sp"
             android:textStyle="bold" />

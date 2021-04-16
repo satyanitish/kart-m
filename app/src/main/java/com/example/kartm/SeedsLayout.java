@@ -30,9 +30,9 @@ import java.util.ArrayList;
 
 public class SeedsLayout extends AppCompatActivity {
     ListView listView;
-    ImageButton Layoutsetting;
+    ImageView Layoutsetting;
     SearchView searchView;
-
+    ImageButton back;
     String mTitle[]={"Wheat","Rice","Groundnut", "Rapeseed"," Mustard","Castor","Cotton" };
     String mDescription[]={"Grain & Cereals Production","Rice Production Seeds","Oil Production Seeds","Oil Production Seeds",
     "Oil Production Seeds","Oil Production Seeds","Cotton Production Seeds"};
@@ -46,9 +46,48 @@ public class SeedsLayout extends AppCompatActivity {
         listView=findViewById(R.id.listview);
         searchView=findViewById(R.id.searchProduct);
         Layoutsetting=findViewById(R.id.Layoutsettings);
+        back=findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         MyAdapter adapter=new MyAdapter(this,mTitle,mDescription,mImages);
         listView.setAdapter(adapter);
+        /*searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
 
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                ArrayList<String > templist=new ArrayList<>();
+
+                for(String temp:mTitle){
+                    if (temp.toLowerCase().contains(newText.toLowerCase())){
+                        templist.add(temp);
+                    }
+                }
+                ArrayAdapter<String > adapter=new ArrayAdapter<>(SeedsLayout.this, android.R.layout.simple_list_item_1,templist);
+                listView.setAdapter(adapter);
+                return true;
+            }
+        });*/
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return true;
+            }
+        });
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -66,14 +105,24 @@ public class SeedsLayout extends AppCompatActivity {
                     startActivity(intent);
                 }if(position==2){
                     Toast.makeText(getApplicationContext(),"Oil Production Seeds",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(SeedsLayout.this,GroundnutActivity.class);
+                    startActivity(intent);
                 }if(position==3){
                     Toast.makeText(getApplicationContext(),"Oil Production Seeds",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(SeedsLayout.this,RapeseedActivity.class);
+                    startActivity(intent);
                 }if(position==4){
                     Toast.makeText(getApplicationContext(),"Oil Production Seeds",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(SeedsLayout.this,MustardActivity.class);
+                    startActivity(intent);
                 }if(position==5){
                     Toast.makeText(getApplicationContext(),"Oil Production Seeds",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(SeedsLayout.this,CastorActivity.class);
+                    startActivity(intent);
                 }if(position==6){
                     Toast.makeText(getApplicationContext(),"Cotton Production Seeds",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(SeedsLayout.this,CottonActivity.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -86,6 +135,7 @@ public class SeedsLayout extends AppCompatActivity {
             }
         });
     }
+
     class MyAdapter extends ArrayAdapter<String>{
 
         Context context;
@@ -116,10 +166,5 @@ public class SeedsLayout extends AppCompatActivity {
 
             return row;
         }
-    }
-
-    public void backMenu(View view) {
-        startActivity(new Intent(SeedsLayout.this,HomeActivity.class));
-        finish();
     }
 }

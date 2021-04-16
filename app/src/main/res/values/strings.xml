@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KartM</string>
+    <string name="app_name">KartMe</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -11,4 +11,30 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    //
+    <string name="seeds">Seeds</string>
+    <string name="machinery">Machinery</string>
+    <string name="organicfertilizer">Organic Fertilizer</string>
+    <string name="farmingvideos">Farming Videos</string>
+    <string name="description">Description:</string>
+    <string name="newsfeed">News Feed</string>
+    <string name="varietyofseeds">Varity of Seed:</string>
+    <string name="turnoverperacer">Turn over per Acre:</string>
+    <string name="typeofsoiltogrow">Type of soil to grow:</string>
+    <string name="tempregion">Temperature - Region :</string>
+    <string name="organicfertilzerrequired">Organic Fertilizers Required :</string>
+
+    <string name="cost">Cost :</string>
+    <string name="descvalues">Vitamins and minerals packed in wheat flour improve skin’s elasticity and reduce wrinkles. Rich fiber content in wheat improves digestion and removes damaging toxins from the body. Antioxidant ability of this innate ingredient protects your skin from harmful UV rays and cancer causing agents.</string>
+    <string name="vosvalues">The main varieties of wheat grown in India are as follows VL-832,VL-804, HS-365, HS-240, HD2687,WH-147, WH-542, PBW-343, WH-896(d), PDW-233(d), UP-2338, PBW-502, Shresth (HD 2687), Aditya (HD 2781), HW-2044, HW-1085, NP-200(di), HW-741.</string>
+    <string name="turnovervalues">25 to 30 quintal</string>
+    <string name="typesoilvalues">Black Soil</string>
+    <string name="turnacer">Major wheat growing states in India are Uttar Pradesh, Punjab, Haryana, Madhya Pradesh, Rajasthan, Bihar and Gujarat.(23`C to 13`)</string>
+    <string name="organicferti">The soil pH is in the range of 6.0 to 7.0 then it is good for growing wheat.Treatment of soil is also necessary. You can treat the soil with Azatobacter (2.5 Kilograms), Phophetica culture (2.5 Kilograms) Tycoderma powder (2.5 Kilograms). Mix all these ingredients with 125 Kilograms of Farm Yard Manure. You can apply this at the last time of ploughing.</string>
+
+
+
+
+
 </resources>

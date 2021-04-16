@@ -1,0 +1,31 @@
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash"
+        android:id="@+id/splash"
+        android:layout_marginTop="200dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kart Me"
+        android:textSize="40dp"
+        android:id="@+id/tt1"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/jersey"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farmers Hands on Mobile Application"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tt2"
+        android:textColor="@color/teal_200"
+        android:fontFamily="@font/ubuntutitle"/>
+</LinearLayout>

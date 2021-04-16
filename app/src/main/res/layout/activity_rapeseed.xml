@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarSize="12dp"
+    android:padding="10sp"
+    tools:context=".RapeseedActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative1"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="252dp"
+            android:layout_height="225dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/wheat"
+                android:layout_width="181dp"
+                android:layout_height="71dp"
+                android:layout_marginLeft="57dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/titilliumsemibold"
+                android:text="Rapeseed"
+                android:textColor="@color/teal_700"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rice"
+                android:layout_width="193dp"
+                android:layout_height="109dp"
+                android:layout_below="@+id/wheat"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/rapeseed" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/len"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/rel">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost : "
+                android:textSize="25dp"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ubuntutitle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 47.89/kg"
+                android:id="@+id/cost"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/len">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Description : "
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:id="@+id/dep"
+                android:layout_margin="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@+id/dep"
+                android:id="@+id/descp"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                />
+            <LinearLayout
+                android:id="@+id/indec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="110dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/decrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/decrement" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/count"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/increment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/increment" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/indec"
+                android:text="Buy"
+                android:id="@+id/addtocart1"
+                android:layout_margin="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/circlebutton"
+                android:fontFamily="@font/albam"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

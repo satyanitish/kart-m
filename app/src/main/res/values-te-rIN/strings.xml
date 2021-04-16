@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KartMe</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    //
+    <string name="seeds">విత్తనాలు</string>
+    <string name="machinery">యంత్రాలు</string>
+    <string name="organicfertilizer">సేంద్రియ ఎరువులు</string>
+    <string name="farmingvideos">వ్యవసాయ వీడియోలు</string>
+    <string name="newsfeed">వార్తలు</string>
+    <string name="cost">ఖరీదు :</string>
+    <string name="description">వివరణ:</string>
+    <string name="varietyofseeds">విత్తనాల రకాలు:</string>
+    <string name="turnoverperacer">ఎకరానికి తిరగండి:</string>
+    <string name="typeofsoiltogrow">పెరగడానికి నేల రకం:</string>
+    <string name="tempregion">ఉష్ణోగ్రత - ప్రాంతం:</string>
+    <string name="organicfertilzerrequired">సేంద్రియ ఎరువులు అవసరం:</string>
+    <string name="descvalues">గోధుమ పిండిలో నిండిన విటమిన్లు మరియు ఖనిజాలు చర్మం యొక్క స్థితిస్థాపకతను మెరుగుపరుస్తాయి మరియు ముడుతలను తగ్గిస్తాయి. గోధుమలలోని రిచ్ ఫైబర్ కంటెంట్ జీర్ణక్రియను మెరుగుపరుస్తుంది మరియు శరీరం నుండి హానికరమైన విషాన్ని తొలగిస్తుంది. ఈ సహజ పదార్ధం యొక్క యాంటీఆక్సిడెంట్ సామర్థ్యం మీ చర్మాన్ని హానికరమైన UV కిరణాలు మరియు క్యాన్సర్ కలిగించే ఏజెంట్ల నుండి రక్షిస్తుంది. </string>
+    <string name="vosvalues">భారతదేశంలో పండించే ప్రధాన రకాలు గోధుమలు VL-832, VL-804, HS-365, HS-240, HD2687, WH-147, WH-542, PBW-343, WH-896 (d), PDW- 233 (డి), యుపి -2338, పిబిడబ్ల్యు -502, శ్రేష్ (హెచ్‌డి 2687), ఆదిత్య (హెచ్‌డి 2781), హెచ్‌డబ్ల్యూ -2044, హెచ్‌డబ్ల్యూ -1085, ఎన్‌పి -200 (డి), హెచ్‌డబ్ల్యూ -741.</string>
+    <string name="turnovervalues">25 నుండి 30 క్వింటాల్ </string>
+    <string name="typesoilvalues">నల్ల నేల</string>
+    <string name="turnacer">భారతదేశంలో గోధుమలు పండించే ప్రధాన రాష్ట్రాలు ఉత్తర ప్రదేశ్, పంజాబ్, హర్యానా, మధ్యప్రదేశ్, రాజస్థాన్, బీహార్ మరియు గుజరాత్. (23` సి నుండి 13` వరకు)</string>
+    <string name="organicferti">నేల pH 6.0 నుండి 7.0 పరిధిలో ఉంటుంది, అప్పుడు గోధుమలను పెంచడం మంచిది. నేల చికిత్స కూడా అవసరం. మీరు మట్టిని అజాటోబాక్టర్ (2.5 కిలోగ్రాములు), ఫోఫెటికా కల్చర్ (2.5 కిలోగ్రాములు) టైకోడెర్మా పౌడర్ (2.5 కిలోగ్రాములు) తో చికిత్స చేయవచ్చు. ఈ పదార్ధాలన్నింటినీ 125 కిలోగ్రాముల ఫార్మ్ యార్డ్ ఎరువుతో కలపండి. దున్నుతున్న చివరి సమయంలో మీరు దీన్ని దరఖాస్తు చేసుకోవచ్చు.</string>
+
+</resources>
